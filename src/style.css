@@ -152,3 +152,66 @@ h3 {
     margin-top: 0;
   }
 }
+
+.main-detail-box {
+  margin-top: 3.5em;
+}
+
+.main-detail-box h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-cars-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.car-item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.car-item-img {
+  min-width: 12.25em;
+  max-width: 12.25em;
+  min-height: 10.18em;
+  max-height: 10.18em;
+  margin: 0 auto;
+}
+
+.car-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-item a {
+  font-size: 0.75em;
+  margin-top: 0.5em;
+  color: #000;
+}
+
+@media screen and (min-width: 50em) {
+  .main-cars-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  .main-cars-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-detail-box h2 {
+    text-align: left;
+  }
+}
