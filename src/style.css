@@ -17,12 +17,14 @@ body {
 
 .header {
   width: 100%;
+  max-width: 55.87em;
   height: 5.62em;
   background-color: #efefef;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.25em;
+  margin: 0 auto;
 }
 
 .header-button-menu {
@@ -35,10 +37,6 @@ body {
 }
 
 @media screen and (min-width: 50em) {
-  .header {
-    padding: 0 3.75em;
-  }
-
   .header-button-menu {
     display: none;
   }
