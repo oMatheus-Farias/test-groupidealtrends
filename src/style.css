@@ -249,8 +249,8 @@ h3 {
   height: 100vh;
   display: flex;
   z-index: 10;
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden; /* visible */
+  opacity: 0; /* 1 */
   transition: all 0.3s ease;
 }
 
@@ -291,6 +291,12 @@ h3 {
 .nav-mobile-items li a {
   text-decoration: none;
   color: #1c1c1c;
+}
+
+@media screen and (min-width: 50em) {
+  .nav-mobile {
+    display: none;
+  }
 }
 
 a.nivo-control {
