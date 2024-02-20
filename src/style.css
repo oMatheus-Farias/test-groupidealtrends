@@ -52,6 +52,10 @@ body {
   font-weight: 500;
 }
 
+.header-nav-content li a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 50em) {
   .header-nav {
     display: none;
@@ -233,6 +237,10 @@ h3 {
   text-decoration: none;
   color: #efefef;
   font-weight: 500;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 25em) {
