@@ -12,4 +12,53 @@ html {
 html,
 body {
   height: 100vh;
+  background-color: #efefef;
+}
+
+.header {
+  width: 100%;
+  height: 5.62em;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25em;
+}
+
+.header-buttonMenu {
+  border: none;
+  cursor: pointer;
+}
+
+.header-buttonMenu i {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 50em) {
+  .header {
+    padding: 0 3.75em;
+  }
+
+  .header-buttonMenu {
+    display: none;
+  }
+}
+
+.header-nav-content {
+  list-style: none;
+  display: flex;
+  gap: 1.25em;
+  text-transform: uppercase;
+}
+
+.header-nav-content li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 50em) {
+  .header-nav {
+    display: none;
+  }
 }
