@@ -25,6 +25,7 @@ body {
   align-items: center;
   padding: 0 1.25em;
   margin: 0 auto;
+  position: relative;
 }
 
 .header-button-menu {
@@ -44,7 +45,7 @@ body {
   display: flex;
   gap: 1.25em;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 2.5em;
 }
 
 .header-nav-content li a {
@@ -59,9 +60,10 @@ body {
 
 .subMenuPrimary-content {
   position: absolute;
-  right: 220px;
+  bottom: -7.25em;
+  right: 10.62em;
   background-color: #1c1c1c;
-  padding: 8px 32px;
+  padding: 0.5em 2em;
   z-index: 10;
   visibility: hidden;
   opacity: 0;
@@ -83,7 +85,8 @@ body {
 }
 
 @media screen and (max-width: 50em) {
-  .header-nav {
+  .header-nav,
+  .subMenuPrimary-content {
     display: none;
   }
 }
