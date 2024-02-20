@@ -5,6 +5,10 @@
   outline: none;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 html,
 body {
   height: 100vh;
