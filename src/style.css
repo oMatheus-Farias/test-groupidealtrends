@@ -243,3 +243,7 @@ h3 {
     font-size: 0.87em;
   }
 }
+
+a.nivo-control {
+  display: none;
+}
