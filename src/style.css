@@ -62,3 +62,23 @@ body {
     display: none;
   }
 }
+
+.slider-container {
+  width: 100%;
+  height: 18.12em;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-content {
+  width: 100%;
+  max-width: 55.87em;
+  height: 18.12em;
+}
+
+.slider-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
