@@ -72,8 +72,8 @@ body {
 
 .subMenuSecondary-content {
   position: absolute;
-  bottom: -196px;
-  right: -8px;
+  bottom: -12.25em;
+  right: -0.5em;
   background-color: #1c1c1c;
   padding: 0.5em 2em;
   z-index: 10;
@@ -171,7 +171,7 @@ h3 {
   object-fit: cover;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 26.25em) {
   .main-img-content {
     margin: 1em auto;
   }
