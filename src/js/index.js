@@ -4,6 +4,7 @@
   const $navMobile = document.querySelector(".nav-mobile");
   const $hamburguerMenuIcon = document.querySelector(".header-button-menu");
   const $closeMenuIcon = document.querySelector(".nav-mobile-button-menu");
+  const $scapeArea = document.querySelector(".scape-area");
 
   const $linkCompanyMenuHeader = document.querySelector(".company");
   const $subMenuPrimary = document.querySelector(".subMenuPrimary-content");
@@ -70,6 +71,7 @@
 
   $hamburguerMenuIcon.addEventListener("click", handleToggleMenu);
   $closeMenuIcon.addEventListener("click", handleToggleMenu);
+  $scapeArea.addEventListener("click", handleToggleMenu);
   $linkCompanyMenuHeader.addEventListener("click", handleToggleSubMenuPrimary);
   $linkMoreSubMenuPrimary.addEventListener(
     "click",
