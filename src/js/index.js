@@ -6,10 +6,14 @@
   const $closeMenuIcon = document.querySelector(".nav-mobile-button-menu");
 
   const $linkCompanyMenuHeader = document.querySelector(".company");
-  const $sunMenuPrimary = document.querySelector(".subMenuPrimary-content");
+  const $subMenuPrimary = document.querySelector(".subMenuPrimary-content");
+
+  const $linkMoreSubMenuPrimary = document.querySelector(".more");
+  const $subMenuSecondary = document.querySelector(".subMenuSecondary-content");
 
   let toggleMenu = false;
   let toggleSubMenuPrimary = false;
+  let toggleSubMenuSecondary = false;
 
   const mobileMenuViewControl = () => {
     if (toggleMenu) {
@@ -24,14 +28,25 @@
 
   const subMenuPrimaryViewControl = () => {
     if (toggleSubMenuPrimary) {
-      $sunMenuPrimary.style.visibility = "visible";
-      $sunMenuPrimary.style.opacity = "1";
+      $subMenuPrimary.style.visibility = "visible";
+      $subMenuPrimary.style.opacity = "1";
     } else {
-      $sunMenuPrimary.style.visibility = "hidden";
-      $sunMenuPrimary.style.opacity = "0";
+      $subMenuPrimary.style.visibility = "hidden";
+      $subMenuPrimary.style.opacity = "0";
     }
   };
   subMenuPrimaryViewControl();
+
+  const subMenuSecondaryViewControl = () => {
+    if (toggleSubMenuSecondary) {
+      $subMenuSecondary.style.visibility = "visible";
+      $subMenuSecondary.style.opacity = "1";
+    } else {
+      $subMenuSecondary.style.visibility = "hidden";
+      $subMenuSecondary.style.opacity = "0";
+    }
+  };
+  subMenuSecondaryViewControl();
 
   const handleToggleMenu = () => {
     toggleMenu = !toggleMenu;
@@ -41,9 +56,23 @@
   const handleToggleSubMenuPrimary = () => {
     toggleSubMenuPrimary = !toggleSubMenuPrimary;
     subMenuPrimaryViewControl();
+
+    if (toggleSubMenuSecondary) {
+      toggleSubMenuSecondary = !toggleSubMenuSecondary;
+      return subMenuSecondaryViewControl();
+    }
+  };
+
+  const handleToggleSubMenuSecondary = () => {
+    toggleSubMenuSecondary = !toggleSubMenuSecondary;
+    subMenuSecondaryViewControl();
   };
 
   $hamburguerMenuIcon.addEventListener("click", handleToggleMenu);
   $closeMenuIcon.addEventListener("click", handleToggleMenu);
   $linkCompanyMenuHeader.addEventListener("click", handleToggleSubMenuPrimary);
+  $linkMoreSubMenuPrimary.addEventListener(
+    "click",
+    handleToggleSubMenuSecondary
+  );
 })();
