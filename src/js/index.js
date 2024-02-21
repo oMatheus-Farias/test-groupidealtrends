@@ -2,8 +2,8 @@
   "use strict";
 
   const $navMobile = document.querySelector(".nav-mobile");
-  const $hamburguerMenuIcon = document.querySelector(".header-button-menu");
-  const $closeMenuIcon = document.querySelector(".nav-mobile-button-menu");
+  const $hamburguerMenuIcon = document.querySelector(".header-buttonMenu");
+  const $closeMenuIcon = document.querySelector(".nav-mobile-buttonMenu");
   const $scapeArea = document.querySelector(".scape-area");
 
   const $linkCompanyMenuHeader = document.querySelector(".company");

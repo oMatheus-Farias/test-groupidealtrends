@@ -35,19 +35,19 @@ body {
   position: relative;
 }
 
-.header-button-menu {
+.header-buttonMenu {
   border: none;
   cursor: pointer;
   font-size: 2em;
 }
 
 @media screen and (min-width: 50em) {
-  .header-button-menu {
+  .header-buttonMenu {
     display: none;
   }
 }
 
-.header-nav-content {
+.header-navContent {
   list-style: none;
   display: flex;
   gap: 1.25em;
@@ -55,13 +55,13 @@ body {
   margin-top: 2.5em;
 }
 
-.header-nav-content li a {
+.header-navContent li a {
   text-decoration: none;
   color: var(--dark-color);
   font-weight: 500;
 }
 
-.header-nav-content li a:hover {
+.header-navContent li a:hover {
   text-decoration: underline;
 }
 
@@ -139,7 +139,7 @@ body {
   align-items: center;
 }
 
-.main-text-content {
+.main-textContent {
   max-width: 25.87em;
   width: 100%;
   display: flex;
@@ -147,39 +147,39 @@ body {
   gap: 0.87em;
 }
 
-.main-text-content h1 {
+.main-textContent h1 {
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.main-text-content h2,
+.main-textContent h2,
 h3 {
   font-size: 0.87em;
   font-weight: 500;
 }
 
-.main-text-content ul {
+.main-textContent ul {
   padding: 0 0 0 1.12em;
   font-size: 0.87em;
   font-weight: 500;
 }
 
-.main-img-content {
+.main-imgContent {
   width: 100%;
   max-width: 20.31em;
   height: 13.25em;
   margin-top: 1em;
 }
 
-.main-img-content img {
+.main-imgContent img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 26.25em) {
-  .main-img-content {
+  .main-imgContent {
     margin: 1em auto;
   }
 }
@@ -189,30 +189,30 @@ h3 {
     padding: 1em;
   }
 
-  .main-middle-box {
+  .main-middleBox {
     display: flex;
     justify-content: space-between;
     max-width: 55.87em;
     width: 100%;
   }
 
-  .main-img-content {
+  .main-imgContent {
     margin-top: 0;
   }
 }
 
-.main-detail-box {
+.main-detailBox {
   margin-top: 3.5em;
 }
 
-.main-detail-box h2 {
+.main-detailBox h2 {
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
 }
 
-.main-cars-content {
+.main-carsContent {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;
@@ -249,17 +249,17 @@ h3 {
 }
 
 @media screen and (min-width: 50em) {
-  .main-cars-content {
+  .main-carsContent {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 62.5em) {
-  .main-cars-content {
+  .main-carsContent {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .main-detail-box h2 {
+  .main-detailBox h2 {
     text-align: left;
   }
 }
@@ -315,7 +315,7 @@ h3 {
   background-color: var(--transparent-black-color);
 }
 
-.nav-mobile-content {
+.nav-mobileContent {
   background-color: var(--clear-color);
   flex: 5;
   padding: 0 1.25em;
