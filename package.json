@@ -1,0 +1,15 @@
+{
+  "name": "test-groupidealtrends",
+  "version": "1.0.0",
+  "description": "![Logo do projeto](https://raw.githubusercontent.com/oMatheus-Farias/test-groupidealtrends/main/assets/mockup-supercars.png)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
